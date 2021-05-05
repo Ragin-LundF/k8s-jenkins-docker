@@ -27,7 +27,7 @@ jobs:
           context: ./jenkins-base/
           file: jenkins-base/Dockerfile
           push: true
-          tags: docker.pkg.github.com/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-base:latest
+          tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-base:latest
       -
         name: Build and Push Jenkins Java Base
         uses: docker/build-push-action@v2
@@ -35,4 +35,4 @@ jobs:
           context: ./jenkins-java/
           file: jenkins-java/Dockerfile
           push: true
-          tags: docker.pkg.github.com/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-base-java:latest
+          tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-base-java:latest
