@@ -36,3 +36,27 @@ jobs:
           file: jenkins-java/Dockerfile
           push: true
           tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-base-java:latest
+      -
+        name: Build and Push Jenkins Gradle Java Build image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./jenkins-java-gradle/
+          file: jenkins-java-gradle/Dockerfile
+          push: true
+          tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-build-java-gradle:latest
+      -
+        name: Build and Push Jenkins Node Build image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./jenkins-node/
+          file: jenkins-node/Dockerfile
+          push: true
+          tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-build-node:latest
+      -
+        name: Build and Push Jenkins Docker Build image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./jenkins-docker/
+          file: jenkins-docker/Dockerfile
+          push: true
+          tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-build-docker:latest
