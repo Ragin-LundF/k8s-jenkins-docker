@@ -6,7 +6,7 @@ For an example project please read more at the [k8s-jcasc-mgmt-example](https://
 Please have also a look at the related medium article [Kubernetes and CI/CD — How to integrate in your development process](https://ragin.medium.com/kubernetes-and-ci-cd-how-to-integrate-in-your-development-process-9b483b194975)
 
 # jenkins-base
-Jenkins Base image for as a basis for non-Java build tools.
+Jenkins Base image for non-Java build tools.
 
 # jenkins-java
 Jenkins Base image for Java build tools.
