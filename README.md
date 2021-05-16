@@ -8,11 +8,14 @@ Please have also a look at the related medium article [Kubernetes and CI/CD — 
 # jenkins-base
 Jenkins Base image for non-Java build tools.
 
-# jenkins-java
-Jenkins Base image for Java build tools.
-
 # jenkins-docker
 Jenkins build image with installed Docker
+
+# jenkins-helm
+Jenkins depoy image with helm, helmfile and kubectl
+
+# jenkins-java
+Jenkins Base image for Java build tools.
 
 # jenkins-java-gradle
 Jenkins build image with installed Gradle
