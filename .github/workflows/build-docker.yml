@@ -60,3 +60,11 @@ jobs:
           file: jenkins-docker/Dockerfile
           push: true
           tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-build-docker:latest
+      -
+        name: Build and Push Jenkins Helm Deploy image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./jenkins-helm/
+          file: jenkins-helm/Dockerfile
+          push: true
+          tags: ghcr.io/ragin-lundf/k8s-jenkins-helm/k8s-jcasc-jenkins-deploy-helm:latest
