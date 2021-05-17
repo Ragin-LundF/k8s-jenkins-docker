@@ -67,4 +67,4 @@ jobs:
           context: ./jenkins-helm/
           file: jenkins-helm/Dockerfile
           push: true
-          tags: ghcr.io/ragin-lundf/k8s-jenkins-helm/k8s-jcasc-jenkins-deploy-helm:latest
+          tags: ghcr.io/ragin-lundf/k8s-jenkins-docker/k8s-jcasc-jenkins-deploy-helm:latest
